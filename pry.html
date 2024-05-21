@@ -641,6 +641,7 @@
                         </li>
 
                     </ul>
+                    
 
                 </div>
             </section>
@@ -749,12 +750,30 @@
 
         <div class="footer-bottom">
             <p class="copyright">
-                &copy; 2023 <a href="https://smartkid222.github.io/SK-Website/site.html#" class="copyright-link">SmarTech</a>. All Rights Reserved
+                &copy; 2024 <a href="https://smartkid222.github.io/SK-Website/site.html#" class="copyright-link">SmarTech</a>. All Rights Reserved
             </p>
         </div>
 
     </div>
 </footer>
+
+<div id="black-overlay" class="black-overlay"></div>
+<div id="agree" class="pop-up">
+    <div class="container">
+        <div class="row ">
+            <div class="box-agree col-md-12 large-centered">   
+                <h3>Instruction</h3>
+                <p>All correction should be made from the English sheet.</p>
+                <p>
+                for classes like PG, Nursery 1, 2 correction should be done from Language Art, ON NO ACCOUNT SHOULD THE REPORT SHEET BE TAMPERED WITH.</p>
+                
+                 <a href="#" class="hvr-bounce-to-right button agree">Agree</a>
+                 <a href="#"  class="hvr-bounce-to-right disableClick button">Not Agree</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -774,6 +793,21 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
+      $('.agree').click(function (e) { 
+       $('#black-overlay').removeClass('black-overlay');
+       $('#agree').addClass('box-overlay');
+       $('#agree').fadeOut(700);
+            e.stopPropagation();        
+     });
+  });
+
+    </script>
 
     <!-- 
     - ionicon link
